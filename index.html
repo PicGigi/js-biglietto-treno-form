@@ -10,20 +10,24 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- javascript -->
-    <script src="script.js"> </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div id="ciao">ciaociao</div>
     <div>
-        <input type="text" name="nome" value="ciao">
+        <input type="text" name="nome">
         <input type="number" name="distanza">
         <select name="età">
-            <option value="under18">Minorenne</option>
-            <option value="over18">Magiorenne</option>
-            <option value="over65">Over 65</option>
+            <option value="0">Minorenne</option>
+            <option value="1">Magiorenne</option>
+            <option value="2">Over 65</option>
         </select>
     </div>
     <button id="cliccami">Click me</button>
+
+    <div>
+        <span id="nome"></span>
+        <span id="prezzo"></span>
+    </div>
 </body>
 </html>
