@@ -19,16 +19,16 @@
         <div class="data">
             <div class="title">
                 <h1>Come ti chiami?</h1>
-                <input type="text" id="nome">
+                <input type="text" id="nome" class="bigger">
             </div>
 
             <div class="title">
                 <h1>Quanti chilometri devi percorrere?</h1>
-                <input type="number" id="distanza">
+                <input type="number" id="distanza" class="bigger">
             </div>
             <div class="title">
                 <h1>Quanti anni hai?</h1>
-                <select id="eta">
+                <select id="eta" class="bigger">
                     <option value="1">Minorenne</option>
                     <option value="2">Maggiorenne</option>
                     <option value="3">Over 65</option>
@@ -37,14 +37,15 @@
         </div>
     </div>
 
-    <div class="ciuf">
-        <img src="train-svgrepo-com.svg" id="cliccami">
-        <h1>Si parte!</h1>
+    <div id="cliccami">
+        <img src="train-svgrepo-com.svg">
+        <h2>Si parte!</h2>
     </div>
 
-    <div class="ticket">
-        <span id="nomeBiglietto"></span>
-        <span id="prezzo"></span>
+    <div id="ticket" class="ticket-css hidden">
+        <div>Nome viaggiatore: <span id="nomeBiglietto"></span></div>
+        <div>Prezzo del biglietto: <span id="prezzo"></span><span>€</span></div>
+        <div id="cancel">Cancella</div>
     </div>
 </body>
 </html>

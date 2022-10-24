@@ -11,22 +11,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 1200px;
 }
 
 .input-section{
-    width: 60%;
-    height: 40%;
+    height: 250px;
     background-color: brown;
     padding: 4rem;
-    margin-top: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    min-width: 800px;
 }
 h1{
-    color: red;
+    color: antiquewhite;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem;
+    margin: 0 .5rem 2rem .5rem;
+}
+
+h2{
+    margin-top: -3rem;
+    color: brown;
 }
 
 .data{
@@ -38,10 +43,22 @@ h1{
     text-align: center;
 }
 
+.bigger{
+    scale: 1.3;
+    width: 150px;
+    height: 30px;
+    border: 2px solid lightcoral;
+    background-color: brown;
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+}
+
 #cliccami{
     width: 200px;
-    margin-top: 3rem;
     transition: .5s;
+    text-align: center;
+    cursor: pointer;
 }
 #cliccami:hover{
     animation: ciufciuf .5s linear infinite;
@@ -51,4 +68,42 @@ h1{
     50%{
         transform: scale(1.1);
     }
+}
+
+.ticket-css{
+    height: 250px;
+    border: 5px solid brown;
+    background-color: lightcoral;
+    padding: 2rem;
+    margin: 5rem 2rem 2rem 2rem;
+    border-radius: 2rem;
+    min-width: 800px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.ticket-css span{
+    color: antiquewhite;
+}
+
+.hidden{
+    display: none;
+}
+
+#cancel{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: .5em;
+    border: 2px solid brown;
+    background-color: antiquewhite;
+    color: brown;
+    border-radius: 2rem;
+    padding: .5rem;
+    cursor: pointer;
 }

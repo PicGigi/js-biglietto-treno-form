@@ -1,6 +1,10 @@
-const element = document.getElementById("cliccami");
-element.addEventListener('click', 
+const eleClick = document.getElementById("cliccami");
+const eleTicket = document.getElementById("ticket");
+eleClick.addEventListener('click', 
     function() {
+
+        eleTicket.classList.remove('hidden');
+
         // NOME
         const nome = document.getElementById("nome").value;
         document.getElementById('nomeBiglietto').innerHTML = nome;
@@ -34,5 +38,11 @@ element.addEventListener('click',
         }
 });
 
+const eleCancel = document.getElementById("cancel");
+eleCancel.addEventListener('click', 
+    function() {
+
+        eleTicket.classList.add('hidden');
+});
 
 
