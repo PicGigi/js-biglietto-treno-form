@@ -12,20 +12,37 @@
     <!-- javascript -->
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <div class="input-section">
+        <!-- input -->
+        <div class="data">
+            <div class="title">
+                <h1>Come ti chiami?</h1>
+                <input type="text" id="nome">
+            </div>
 
-    <div>
-        <input type="text" id="nome">
-        <input type="number" id="distanza">
-        <select id="eta">
-            <option value="1">Minorenne</option>
-            <option value="2">Maggiorenne</option>
-            <option value="3">Over 65</option>
-        </select>
+            <div class="title">
+                <h1>Quanti chilometri devi percorrere?</h1>
+                <input type="number" id="distanza">
+            </div>
+            <div class="title">
+                <h1>Quanti anni hai?</h1>
+                <select id="eta">
+                    <option value="1">Minorenne</option>
+                    <option value="2">Maggiorenne</option>
+                    <option value="3">Over 65</option>
+                </select>
+            </div>
+        </div>
     </div>
-    <button id="cliccami">Click me</button>
 
-    <div>
+    <div class="ciuf">
+        <img src="train-svgrepo-com.svg" id="cliccami">
+        <h1>Si parte!</h1>
+    </div>
+
+    <div class="ticket">
         <span id="nomeBiglietto"></span>
         <span id="prezzo"></span>
     </div>
